@@ -26,7 +26,7 @@ class Server {
     public setCors(): void {
         this._app.use( cors({
             origin: '*', //! Change
-            methods: ['GET'],
+            methods: ['GET', 'POST'],
             credentials: true
         }));
     }
